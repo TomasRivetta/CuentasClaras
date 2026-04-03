@@ -44,7 +44,7 @@ export default function AddParticipantForm({ onAdd }: AddParticipantFormProps) {
             id="input-name"
             className={`ff-input ${errors.name ? "ff-input--error" : ""}`}
             type="text"
-            placeholder="Ej: Sofía"
+            placeholder="Ej: Tomi"
             value={name}
             onChange={(e) => setName(e.target.value)}
             onKeyDown={handleKey}

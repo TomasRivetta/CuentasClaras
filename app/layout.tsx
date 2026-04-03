@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Cuentas Claras",
   description: "Dividí gastos con tus amigos de forma simple y elegante.",
+  icons: {
+    icon: "https://img.icons8.com/ios/50/split-money.png",
+    shortcut: "https://img.icons8.com/ios/50/split-money.png",
+    apple: "v",
+  },
 };
 
 export default function RootLayout({
