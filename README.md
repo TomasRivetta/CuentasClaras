@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💸 Dividir Gastos - Juntadas
 
-## Getting Started
+Aplicación web simple para dividir gastos entre amigos de forma rápida y sin complicaciones. Ideal para juntadas, asados, viajes o cualquier situación donde varias personas pagan cosas y hay que ajustar cuentas.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> (futuramente)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 Problema que resuelve
 
-## Learn More
+Cuando varias personas gastan diferentes montos, calcular quién debe a quién puede ser confuso.
 
-To learn more about Next.js, take a look at the following resources:
+Esta app:
+- Calcula cuánto debería pagar cada uno
+- Determina quién puso de más o de menos
+- Genera un resumen claro de transferencias necesarias
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚙️ Cómo funciona
 
-## Deploy on Vercel
+1. Agregás participantes  
+2. Indicás cuánto gastó cada uno  
+3. La app calcula automáticamente:
+   - total gastado
+   - promedio por persona
+   - balances individuales
+   - quién le paga a quién  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Ejemplo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Persona | Gastó |
+|--------|------|
+| Tomás  | 50000 |
+| Juan   | 30000 |
+| Pedro  | 10000 |
+
+**Resultado:**
+- Cada uno debería pagar: **30000**
+- Pedro le debe **20000 a Tomás**
+
+---
+
+## ✨ Features
+
+- ➕ Agregar participantes dinámicamente
+- 💰 Carga de gastos por persona
+- 📊 Cálculo automático del balance
+- 🔄 Optimización de transferencias (menos movimientos)
+- 🎨 UI moderna y responsive
+- 📱 Funciona en mobile y desktop
+- ♻️ Botón para resetear datos
+
+---
+
+## 🧱 Tecnologías
+
+- Next.js
+- Tailwind CSS
+- TypeScript
+- Deploy en Vercel
+
+---
+
+## ⚠️ Limitaciones
+
+- No guarda datos (sin base de datos)
+- No hay login ni cuentas de usuario
+- La información se pierde al recargar la página
+
+---
+
+## 🧑‍💻 Autor
+
+- Tomás Rivetta Full Stack Developer
+
+- Portfolio: [totoridev.netlify.app](https://totoridev.netlify.app/)
+- LinkedIn: [Tomás Rivetta](https://www.linkedin.com/in/tomasrivetta-fullstack/)
